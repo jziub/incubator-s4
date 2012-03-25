@@ -46,7 +46,7 @@ public abstract class ZkBasedTest {
 
         TaskSetup taskSetup = new TaskSetup(zookeeperAddress);
         taskSetup.clean(clusterName);
-        taskSetup.setup(clusterName, this.numTasks);
+        taskSetup.setup(clusterName, this.numTasks, 1300);
     }
 
     @After

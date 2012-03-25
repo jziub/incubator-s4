@@ -35,7 +35,7 @@ public class Event {
     private static final Logger logger = LoggerFactory.getLogger(Event.class);
 
     final private long time;
-    private int streamId;
+    private String streamName;
     private int appId;
     private Map<String, Data<?>> map;
 
@@ -64,8 +64,8 @@ public class Event {
      * 
      * @return the target stream id
      */
-    public int getStreamId() {
-        return streamId;
+    public String getStreamName() {
+        return streamName;
     }
 
     /**
@@ -74,8 +74,8 @@ public class Event {
      * 
      * @param targetStreamId
      */
-    public void setStreamId(int streamId) {
-        this.streamId = streamId;
+    public void setStreamId(String streamName) {
+        this.streamName = streamName;
     }
 
     /**
